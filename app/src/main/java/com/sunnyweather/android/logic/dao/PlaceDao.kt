@@ -10,7 +10,7 @@ object PlaceDao {
 
     fun savePlace(place: Place){
         sharedPreferences().edit{
-            putString("place", Gson().toJson(Place::class.java))
+            putString("place", Gson().toJson(place))
         }
     }
 
